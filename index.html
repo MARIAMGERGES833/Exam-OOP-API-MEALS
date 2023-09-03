@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!--+++  favicon   ++++-->
+    <link rel="icon" href="https://routeegy.github.io/YummyExam/imgs/logo.png">
+    <!--+++  foooooooonts   ++++-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,300;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--+++  sweetalert2   ++++-->
+    <link rel="stylesheet" href="css/sweetalert2.min (1).css">
+    <!--+++  fontawesome   ++++-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--+++   bootstrap  ++++-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--+++   main style sheet ++++-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--start loading-->
+    <div class="load">
+        <span class="loader"></span>
+    </div>
+    <!--end loading-->
+
+
+
+
+    <!--START NAV BAR-->
+    <div id="navSide" class="navSide position-fixed">
+        <div id="innerNav" class="navInner p-4 d-flex flex-column justify-content-between ">
+            <div class="image  mx-auto mt-4 mb-5">
+                <img class="w-100 rounded-circle" src="https://routeegy.github.io/YummyExam/imgs/logo.png" />
+            </div>
+            <ul class="fs-4 p-0 mb-5 links">
+                <li class="mb-4 "><a id="search" class="nav-link active" href="#">Search</a></li>
+                <li class="mb-4 "><a id="Category" class="nav-link " href="#">Category</a></li>
+                <li class="mb-4 "><a id="Area" class="nav-link " href="#">Area</a></li>
+                <li class="mb-4 "><a id="Ingrediants" class="nav-link " href="#">Ingrediants</a></li>
+                <li class="mb-4 "><a id="Contact" class="nav-link" href="#">Contact Us</a></li>
+            </ul>
+            <div>
+                <ul class=" d-flex p-0 ">
+                    <li class="me-2"><a href="#" ><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="me-2"><a href="#" ><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="me-2"><a href="#" ><i class="fa-solid fa-share-nodes"></i></a></li>
+                    <li class="me-2"><a href="#" ><i class="fa-solid fa-globe"></i></a></li>
+                </ul>
+                <p class="small text-light mb-0">Copyright Â© 2019 All Rights</p>
+                <p class="small text-light">Reserved.</p>
+            </div>
+
+        </div>
+
+        <div class="semiCircle d-flex align-items-center justify-content-center rounded-end-pill "> 
+            <i class="fs-3 fa-solid fa-bars  text-dark "></i><i class="fs-3 fa-solid fa-xmark  text-dark "></i>
+        </div>
+    </div>
+    <!--END NAV BAR-->
+
+
+    <!--=============start header===============-->
+    <header id="home" class="home py-3 ">
+        <div class="container">
+
+
+
+
+
+
+
+            <!--start display data ==mainsection===-->
+            <div class="sectionSearch mainsection">
+                <div class="container">
+                    <h3 id="title"></h3>
+                     <div class="row gy-3" id="allData">
+                       
+
+                        
+                </div>
+                </div>
+            </div>
+            <!--end display data-->
+        </div>
+
+    </header>
+    <!--=============end header===============-->
+
+
+
+
+    <!--==============start search section=============-->
+    <section id="sectionInput" class="py-3 ">
+
+        <div class="container">
+            <div class="row mb-3 py-3">
+                <div class="col-md-6 mb-2">
+                    <input id="searchName" class="form-control" type="text" placeholder="Search By Name" />
+                </div>
+                <div class="col-md-6 mb-2">
+                    <input id="searchLetter" maxlength="1" class="form-control" type="text"
+                        placeholder="Search By First Letter" />
+                </div>
+            </div>
+            <div class="row gy-3" id="searchData">
+
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+    <!--==============end secound section=============-->
+
+
+    <section id="contactSection">
+        <div class="container">
+            <form >
+                <div class="row gy-5 text-center py-5">
+                    <div class="col-md-6 ">
+                       <input id="inputName" class="form-control mb-3" type="text" placeholder="Enter Your Name... "  name="name"/>
+                       <div class="d-none alert mb-5" id="spanname">"Special characters and numbers not allowed"</div>
+                       
+                       <input id="inputPhone"  class="form-control mb-3" type="number" placeholder="Enter Your Phone... "  name="phone"/>
+                       <div class="d-none alert mb-5" id="apanphone">"Enter valid Phone Number"</div>
+                       
+                       <input id="inputPassword" class="form-control mb-3" type="password" placeholder="Enter Your Password... "  name="password"/>
+                       <div class="d-none alert mb-5" id="spanpassword">"Enter valid password *Minimum eight characters, at least one letter and one number , *Maximum 10 item"</div>
+            
+                    </div>
+                    <div class="col-md-6">
+                        <input id="inputEmail" class="form-control mb-3" type="email" placeholder="Enter Your Email... "  name="email"/>
+                        <div class="d-none alert mb-5" id="spanemail">n</div>
+                        
+                        <input id="inputAge"  class="form-control mb-3" type="number" placeholder="Enter Your Age... "  name="age"/>
+                        <div class="d-none alert mb-5" id="spanage">n</div>
+                        
+                        <input id="inputRepassword" class="form-control mb-3" type="password" placeholder="Repassword... "  name="password"/>
+                        <div class="d-none alert mb-5" id="spanrepassword">"Enter valid password"</div>
+                    </div>
+                     <div class="sub">
+                        <button disabled id="buttonSubmit" class="btn btn-outline-danger" type="submit">Submit</button>
+                     </div>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+    <script src="js/sweetalert2.all.min (1).js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
